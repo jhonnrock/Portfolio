@@ -514,11 +514,13 @@ main .section-about {
         background: #050024;
         opacity: 0.97;
         transition: all 0.5s;
-        /* transform: translateX(auto */
+        
 
 
     }
-
+    header .header-title{
+        height: 350px;
+    }
     .view-menu.active .menu-show {
         display: block;
         background: #020024;
