@@ -53,7 +53,7 @@ nav {
 
 
     position: fixed;
-    background: linear-gradient(to right, rgba(128, 130, 255, 0.205), #780206);
+    
     display: flex;
     justify-content: left;
     height: 60px;
@@ -369,11 +369,12 @@ main .section-about {
 
 .section-portfolio p {
     font-size: 23px;
-    text-align: justify;
+    /* text-align: center; */
     margin-bottom: 15px;
     justify-content: center;
     align-content: center;
     display: flex;
+    flex-wrap: wrap;    
 }
 
 .container-portfolio .card-porta {
@@ -485,6 +486,9 @@ main .section-about {
 @media screen and (max-width:768px) {
 
     /* this is for header */
+    nav {
+        background: linear-gradient(to right, rgba(128, 130, 255, 0.205), #780206);
+    }
     .view-menu>.menu-show {
         display: none;
 
