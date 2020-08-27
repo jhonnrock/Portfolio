@@ -303,8 +303,7 @@ main .section-about {
     align-items: center;
     border-radius: 5px;
     box-shadow: 0 0 10px black;
-    /* transition: all 0.2s ease-in-out; */
-    /* position: relative; */
+   
 }
 .container-skill .row-skill {
     position: relative;
@@ -486,9 +485,7 @@ main .section-about {
 @media screen and (max-width:768px) {
 
     /* this is for header */
-    nav {
-        background: linear-gradient(to right, rgba(128, 130, 255, 0.205), #780206);
-    }
+  
     .view-menu>.menu-show {
         display: none;
 
@@ -499,8 +496,7 @@ main .section-about {
         font-size: 35px;
         justify-content: left;
         transition: all 0.5s;
-        /* transform: translateX(auto); */
-        /* background: yellow; */
+       
     }
 
     .collapse-menu {
@@ -532,23 +528,24 @@ main .section-about {
         bottom: 0;
         width: 100%;
         height: calc(100% - 50px);
-        /* transition: all 0.5s ease-in-out; */
+      
 
     }
-   
-    /* .menu-show li a > .menu-show:hover{
-        transform: scale(0);
-        color:yellow;
-    }  */
+    
+  
 
 
     .menu-show>li {
         display: block;
         text-align: center;
         margin: 50px 0;
+        transition: transform .3s;
+        transform: scale(1);
     }
 
-
+    /* .menu-show:hover >li{
+        transform:scale(0)
+    } */
 
     /* for container about */
     .container-about {
@@ -590,8 +587,6 @@ main .section-about {
     .row-skill i {
         margin-right: 5px;
     }
-
-
 
 
 
