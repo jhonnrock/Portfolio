@@ -4,7 +4,7 @@
 ## portfolio
 Name: Johnny Peña trujillo </br>
 Twitter: https://twitter.com/johnnrock789 </br>
-URL: https://app.netlify.com/sites/johnnrock/overview
+URL: https://johnnrock.netlify.app/
 </br>
 
 ## Type:
