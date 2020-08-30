@@ -2,13 +2,14 @@
 **Pequenio portafolio**
 
 ##portfolio
-Name: Johnny Penia trujillo
-Twitter: https://twitter.com/musartedev
-URL: https://musarte.dev/
+Name: Johnny Peña trujillo </br>
+Twitter: https://twitter.com/johnnrock789 </br>
+URL: https://app.netlify.com/sites/johnnrock/overview
+</br>
 
 ##Type:
-   <input type="checkbox" name="port" value="portfolio">
-<label for="port" checked disabled>  Portfolio</label>
+   <input type="checkbox" name="port" value="portfolio" checked disabled>
+<label for="port" >  Portfolio</label>
 <br>
 <input type="checkbox" id="blog" name="blog" value="Car">
 <label for="blog"> Blog</label>
