@@ -10,9 +10,9 @@ URL: https://johnnrock.netlify.app/
 ## Type:
 
 - [X] Portfolio
-- [] website
-- [] Blog
-- [] Other
+- [X] website
+- [ ] Blog
+- [ ] Other
 
 ## image path
 

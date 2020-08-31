@@ -23,7 +23,7 @@
 .title {
 
     text-align: center;
-    color: purple;
+    color: #D74B5C;
     font-size: 30px;
     font-weight: 300;
     margin-bottom: 20px;
@@ -52,10 +52,10 @@ header {
 nav {
 
 
+    display: flex;
+    justify-content:space-between ;
     position: fixed;
     
-    display: flex;
-    justify-content: left;
     height: 60px;
     width: 100%;
     z-index: 1;
@@ -102,7 +102,7 @@ nav ul li .hrefdata>.icon-fa {
 
 nav .hrefdata:hover {
     background: #210541;
-    color: white;
+    color: #D74B5C;
     cursor: pointer;
     font-size: 27px;
     text-shadow: 2px 2px #040402;
@@ -116,12 +116,29 @@ nav .icon-fa:hover {
     cursor: pointer;
 
 }
+.name-user{
+    /* display: inline-block; */
+    /* background:yellow; */
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    align-items: center;
+    font-size: 900;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.name-user span{
+    color:red
+}
 
 .collapse-menu {
     display: none;
     position: relative;
     cursor: pointer;
 }
+
 
 header .header-title {
     display: flex;
@@ -157,13 +174,13 @@ header .contacts-data {
 
 }
 
-.contacts-data>span {
+.contacts-data>a {
 
     color: white;
     cursor: pointer;
 }
 
-.contacts-data>a:hover {
+.contacts-data > a:hover {
     transition: all 0.3s;
     color: #f5f5f5;
     font-size: 36px;
@@ -190,7 +207,7 @@ header .contacts-data {
 
 .header-title h3 {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 700;
     color: white;
     margin-top: 20px;
 }
@@ -225,7 +242,7 @@ main .section-about {
 .card-about h3 {
     text-align: center;
     margin-top: 20px;
-   
+   color: #D74B5C;
     cursor: pointer;
 }
 
@@ -234,7 +251,7 @@ main .section-about {
 .card-info p {
     text-align: center;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 21px;
     padding: 8px 10px 5px 10px;
 
 }
@@ -258,11 +275,14 @@ main .section-about {
 }
 
 .card-button .btn-button {
-    background: yellow;
+    background: #d74b5c;
     padding: 15px;
-    color: black;
+    color: white;
     text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
 }
+
 
 .btn-button i {
     color: #030922;
@@ -274,6 +294,8 @@ main .section-about {
     background: #52228B;
     color: black;
     cursor: pointer;
+    transform: scaleY(1.25);
+
 }
 
 .card-button:hover>i {
@@ -287,10 +309,10 @@ main .section-about {
 
 .container-skill {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     /* grid-template-rows: 100px 100px auto; */
     gap: 1em;
-    grid-template-rows: repeat(6, minmax(180px, auto));
+    grid-template-rows: repeat(5, minmax(180px, auto));
     /* grid-tem */
 }
 
@@ -427,10 +449,36 @@ main .section-about {
 .hover-text p >a {
     color:white;
 }
+.tools{
+    margin-top:10px;
+}
+.hover-text .tools >a{
+    background: #191922;;
+    color: white;
+    text-decoration: none;
+    margin-right: 8px;
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px black;
+    
+}
+.hover-text a:hover{
+    transition: all 0.3s;
+    color: #701212;
+    font-size: 28px;
+    text-shadow: 2px 2px #040402;
+}
+.tools>a:hover{
+    color:#D74B5C;
+    transition: all 0.3s;
+    text-shadow: 2px 2px #040402;
+}
 
 .card-porta:hover .hover-text {
     transform: scale(1);
     text-align: center;
+    
 
 
 }
@@ -490,18 +538,23 @@ main .section-about {
         display: none;
 
     }
+    /* nav{
+        display:flex;
+        justify-content: space-between;
+    } */
+    
 
     .view-menu {
         display: flex;
         font-size: 35px;
-        justify-content: left;
+        justify-content: space-between;
         transition: all 0.5s;
        
     }
 
     .collapse-menu {
         display: block;
-        color: black;
+        color: #d74b5c;
         padding: 15px;
     }
 
@@ -512,11 +565,16 @@ main .section-about {
         position: fixed;
         background: #050024;
         opacity: 0.97;
-        transition: all 0.5s;
-        
+        /* transition: all 0.5s;
+        clip-path: circle(150% at 100% 0); */
 
 
     }
+    .view-menu.inactive{
+        -webkit-clip-path: circle(0 at 100% 0);
+        clip-path: circle(0 at 100% 0);  
+    }
+   
     header .header-title{
         height: 350px;
     }
@@ -612,6 +670,9 @@ main .section-about {
         padding: 5px 0 5px 0;
 
     }
-
+        .card-about p,
+    .card-info p {
+        font-size:18px;
+    }
     
 }
