@@ -539,7 +539,10 @@ main .section-about {
 }
 
 @media screen and (max-width:768px) {
-
+    /* this css card vegetable */
+    .mycsscard{
+            height: 200px;
+    }
     /* this is for header */
   
     .view-menu>.menu-show {
